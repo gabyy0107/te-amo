@@ -485,13 +485,17 @@ body {
     transform: translateX(-50%);
     color: #1aa4a9;
     font-family: Arial, sans-serif;
-  font-size: 5vmin; /* aumentado para mayor tamaño visual */
+  font-size: 2.5vmin; /* aumentado para mayor tamaño visual */
     text-shadow: 0 0 1vmin rgba(198,163,255,0.5);
     z-index: 2001; /* Subido para estar por encima de night y decoraciones */
     opacity: 0;
     animation: fadeIn 3s 1s forwards;
     text-align: center;
     pointer-events: none; /* Para que no bloquee clics */
+    white-space: nowrap; /* Mantiene todo en una sola línea */
+    max-width: 90%; /* ocupa casi toda la pantalla */
+  overflow: hidden; /* evita que crezca demasiado */
+  text-overflow: ellipsis; /* opcional: pone ... si se corta */
 }
 
 /* Aumenta el tamaño de fuente en móviles */
